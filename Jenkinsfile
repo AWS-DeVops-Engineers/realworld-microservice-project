@@ -13,12 +13,12 @@ pipeline {
         snyk 'Snyk'
     }
     stages {
-        // Checkout To The Service Branch
-        stage('Checkout To Mcroservice Branch'){
-            steps{
-                git branch: 'app-product-catalog-service', url: 'https://github.com/AWS-DeVops-Engineers/realworld-microservice-project.git'
-            }
-        }
+        // // Checkout To The Service Branch
+        // stage('Checkout To Mcroservice Branch'){
+        //     steps{
+        //         git branch: 'app-product-catalog-service', url: 'https://github.com/AWS-DeVops-Engineers/realworld-microservice-project.git'
+        //     }
+        // }
         // SonarQube SAST Code Analysis
         stage("SonarQube SAST Analysis"){
             steps{
