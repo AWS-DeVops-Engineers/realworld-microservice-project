@@ -6,12 +6,12 @@ def COLOR_MAP = [
 pipeline {
     agent any
     stages {
-        // Checkout To The Service Branch
-        stage('Checkout To Mcroservice Branch'){
-            steps{
-                git branch: 'app-database', url: 'https://github.com/AWS-DeVops-Engineers/realworld-microservice-project.git'
-            }
-        }
+        // // Checkout To The Service Branch
+        // stage('Checkout To Mcroservice Branch'){
+        //     steps{
+        //         git branch: 'app-database', url: 'https://github.com/AWS-DeVops-Engineers/realworld-microservice-project.git'
+        //     }
+        // }
         // Deploy to The Staging/Test Environment
         stage('Deploy Microservice To The Stage/Test Env'){
             steps{
